@@ -7,6 +7,7 @@ export default class ApiService {
   constructor() {
     this.searchQuery = '';
     this.page = 1;
+    this.movie_id = id;
   }
   getTrendingMovies() {
     const tredingFilms = axios
@@ -36,7 +37,7 @@ export default class ApiService {
 
   getInfoModalCard () {
     const modalDetailInfo = axios
-      .get(`${BASE_URL}/movie/{movie_id}?api_key=${API_KEY}&language=en-US`)
+      .get(`${BASE_URL}/movie/${id}?api_key=${API_KEY}&language=en-US`)
       .then(({ data }) => data);
 
     return modalDetailInfo;
