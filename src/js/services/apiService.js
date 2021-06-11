@@ -32,6 +32,19 @@ export default class ApiService {
     return genresIds;
   }
 
+
+
+  getInfoModalCard () {
+    const modalDetailInfo = axios
+      .get(`${BASE_URL}/movie/{movie_id}?api_key=${API_KEY}&language=en-US`)
+      .then(({ data }) => data);
+
+    return modalDetailInfo;
+  }
+
+
+
+
   get query() {
     return this.searchQuery;
   }

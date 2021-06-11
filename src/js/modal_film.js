@@ -1,7 +1,7 @@
-import movieCardTmpl from '../templates/cardMovie.hbs';
-/* import moviesList from '../templates/hero_movies.hbs'; */
+/* import movieCardTmpl from './templates/cardMovie.hbs';
+import moviesList from './templates/hero_movies.hbs'; */
 
-console.log(moviesList)
+
 
 const refs = {
   backdropModalImg: document.querySelector('.backdrop'),
@@ -9,7 +9,7 @@ const refs = {
   moviesCard: document.querySelector('.movies-card'),
 };
 console.log(refs.backdropModalImg);
-console.log(refs.backdropModalImg.classList.value); //backdrop visually-hidden
+console.log(refs.backdropModalImg.classList.value); 
 refs.backdropModalImg.addEventListener('click', onBackdropModalClose);
 refs.btnModalImgClose.addEventListener('click', onBtnModalClose);
 function onBackdropModalClose(e) {
@@ -32,22 +32,22 @@ function closeModalEscape(e) {
 }
 
 
-
+/* 
  refs.moviesCard.addEventListener('click', onImageGalleryList);
  function onImageGalleryList(e) {
   e.preventDefault();
   if (e.target.classList.value !== "movies-card") {
     return;
   }
-  addOpenLightboxClass();
+  addOpenLightboxClass(); */
   /* apiService.fetchPicture().then((data) => {
     clearCardList();
     movieCardTmpl(data);
   }); */    
-}
+/* }
 function addOpenLightboxClass() {
   refs.backdropModalImg.classList.add("is-open");
-} 
+}  */
 
 /* function movieCardInfo(data) {
   listEl.insertAdjacentHTML("beforeend", movieCardTmpl(data));
