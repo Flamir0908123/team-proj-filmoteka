@@ -275,9 +275,17 @@ header {
   border: none;
 }
 .button {
-  margin-left: 15px;
+ 
 
   align-items: center;
 
   justify-content: center;
+}
+.watched-button{
+  margin-right: 15px;
+}
+.button-container{
+width: 292px;
+margin-left: auto;
+margin-right: auto;
 }
