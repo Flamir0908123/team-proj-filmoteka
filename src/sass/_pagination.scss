@@ -84,24 +84,24 @@
 }
 
 .pag-arrow {
+  background-color: #c4c0c0;
   width: 40px;
   height: 40px;
   margin: 5px;
+  cursor: pointer;
   background-position: center;
   border: none;
-  background-color: #fff;
+ 
   transition: background-color 0.25s ease-in;
-  border-radius: 5px;
+  border-radius: 50%;
 
   &:hover {
     background-color: #ff6b08;
     color: #ffffff;
-    border-radius: 5px;
+   
   }
 
-  &:active {
-    background-color: green;
-  }
+ 
 }
 
 .threeDots {
@@ -137,3 +137,49 @@
   pointer-events: none;
   background-color: #c4c0c0;
 }
+.gg{
+  margin-top: 9px;
+    margin-left: 4px;
+    text-align: center;
+   font-size: 20px
+   
+}
+
+.back_to_top{
+	color:black;
+  text-align:center;
+	font-size:135%;
+	margin:2em;
+	padding-top:1.8em;
+  position: fixed;
+  font-family: 'Calibri', sans-serif;
+  bottom: 80px;
+  right: 40px;
+	border-color:black;
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.back_to_top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em black;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.back_to_top:hover{
+	color:$color-accent;
+	border-color:$color-accent;
+}
+.back_to_top:hover:before{
+	transform: rotate(360deg);
+}
+
+

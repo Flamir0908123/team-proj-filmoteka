@@ -8,3 +8,4 @@ import './js/onSearch';
 
 import './js/about_us';
 import './js/my-library';
+import './js/back_to_top'
