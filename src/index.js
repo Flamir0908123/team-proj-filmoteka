@@ -1,9 +1,11 @@
 import './sass/main.scss';
 import './js/services/apiService';
-// import './js/modal_film';
+import './js/pagination';
+
 import './js/hero_movies';
+import './js/modal_film';
 import './js/onSearch';
 
-// import movieCardTmpl from './templates/cardMovie.hbs';
-
 import './js/about_us';
+import './js/my-library';
+import './js/back_to_top'

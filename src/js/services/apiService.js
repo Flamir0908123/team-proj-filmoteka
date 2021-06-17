@@ -32,6 +32,15 @@ export default class ApiService {
     return genresIds;
   }
 
+
+  getTrendingMoviesPage(page) {
+    const tredingFilms = axios
+      .get(`${BASE_URL}/trending/movie/week?api_key=${API_KEY}&page=${page}`)
+      .then(({ data }) => data);
+    return tredingFilms;
+  }
+
+
   getModalMovie(movieId) {
     const movieById = axios
       .get(`${BASE_URL}/movie/${movieId}?api_key=${API_KEY}`)
@@ -39,6 +48,7 @@ export default class ApiService {
     return movieById;
   }
   // вызываем apiService.getModalMovie(id-фильма);
+
 
   get query() {
     return this.searchQuery;
@@ -48,10 +58,10 @@ export default class ApiService {
     this.searchQuery = newQuery;
   }
 
-  incrementPage() {
-    this.page += 1;
+  get pageNum() {
+    return this.page;
   }
-  resetPage() {
-    this.page = 1;
+  set pageNum(newPageNum) {
+    this.page = newPageNum;
   }
 }
